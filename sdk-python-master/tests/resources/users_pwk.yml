@@ -1,0 +1,34 @@
+pwk_client1:
+  # 组织ID
+  org_id: "wx-org1.chainmaker.org"
+  user_sign_key_file_path: "./crypto-config/wx-org1.chainmaker.org/admin/admin.key"
+  crypto:
+    hash: SHA256
+  auth_type: permissionedWithKey
+
+
+pwk_client2:
+  # 组织ID
+  org_id: "wx-org2.chainmaker.org"
+  user_sign_key_file_path: "./crypto-config/wx-org2.chainmaker.org/admin/admin.key"
+  crypto:
+    hash: SHA256
+  auth_type: permissionedWithKey
+
+
+pwk_client3:
+  # 组织ID
+  org_id: "wx-org3.chainmaker.org"
+  user_sign_key_file_path: "./crypto-config/wx-org3.chainmaker.org/admin/admin.key"
+  crypto:
+    hash: SHA256
+  auth_type: permissionedWithKey
+
+pwk_client4:
+  # 组织ID
+  org_id: "wx-org4.chainmaker.org"
+  user_sign_key_file_path: "./crypto-config/wx-org4.chainmaker.org/admin/admin.key"
+  crypto:
+    hash: SHA256
+  auth_type: permissionedWithKey
+

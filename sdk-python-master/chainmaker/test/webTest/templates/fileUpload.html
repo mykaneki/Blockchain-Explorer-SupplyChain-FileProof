@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>提交文件信息</title>
+</head>
+<body>
+    <h1>提交文件信息</h1>
+    <form action="http://119.91.212.68:5000/fileMessageUpload" method="POST">
+        <label for="fileName">文件名：</label>
+        <input type="text" name="fileName" id="fileName" required><br><br>
+
+        <label for="fileHash">文件哈希：</label>
+        <input type="text" name="fileHash" id="fileHash" required><br><br>
+
+        <label for="time">时间：</label>
+        <input type="text" name="time" id="time" required><br><br>
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
+

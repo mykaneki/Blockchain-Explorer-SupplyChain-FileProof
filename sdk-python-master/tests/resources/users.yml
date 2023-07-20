@@ -1,0 +1,132 @@
+admin1:
+  # 组织ID
+  org_id: "wx-org1.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "./crypto-config/wx-org1.chainmaker.org/user/admin1/admin1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "./crypto-config/wx-org1.chainmaker.org/user/admin1/admin1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "./crypto-config/wx-org1.chainmaker.org/user/admin1/admin1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "./crypto-config/wx-org1.chainmaker.org/user/admin1/admin1.sign.crt"
+
+admin2:
+  # 组织ID
+  org_id: "wx-org2.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "crypto-config/wx-org2.chainmaker.org/user/admin1/admin1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "crypto-config/wx-org2.chainmaker.org/user/admin1/admin1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "crypto-config/wx-org2.chainmaker.org/user/admin1/admin1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "crypto-config/wx-org2.chainmaker.org/user/admin1/admin1.sign.crt"
+
+admin3:
+  # 组织ID
+  org_id: "wx-org3.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "crypto-config/wx-org3.chainmaker.org/user/admin1/admin1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "crypto-config/wx-org3.chainmaker.org/user/admin1/admin1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "crypto-config/wx-org3.chainmaker.org/user/admin1/admin1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "crypto-config/wx-org3.chainmaker.org/user/admin1/admin1.sign.crt"
+
+admin4:
+  # 组织ID
+  org_id: "wx-org4.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "crypto-config/wx-org4.chainmaker.org/user/admin1/admin1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "crypto-config/wx-org4.chainmaker.org/user/admin1/admin1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "crypto-config/wx-org4.chainmaker.org/user/admin1/admin1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "crypto-config/wx-org4.chainmaker.org/user/admin1/admin1.sign.crt"
+
+client1:
+  # 组织ID
+  org_id: "wx-org1.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "crypto-config/wx-org1.chainmaker.org/user/client1/client1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "crypto-config/wx-org1.chainmaker.org/user/client1/client1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "crypto-config/wx-org1.chainmaker.org/user/client1/client1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "crypto-config/wx-org1.chainmaker.org/user/client1/client1.sign.crt"
+
+
+client2:
+  # 组织ID
+  org_id: "wx-org2.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "crypto-config/wx-org2.chainmaker.org/user/client1/client1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "crypto-config/wx-org2.chainmaker.org/user/client1/client1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "crypto-config/wx-org2.chainmaker.org/user/client1/client1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "crypto-config/wx-org2.chainmaker.org/user/client1/client1.sign.crt"
+
+
+client3:
+  # 组织ID
+  org_id: "wx-org3.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "crypto-config/wx-org3.chainmaker.org/user/client1/client1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "crypto-config/wx-org3.chainmaker.org/user/client1/client1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "crypto-config/wx-org3.chainmaker.org/user/client1/client1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "crypto-config/wx-org3.chainmaker.org/user/client1/client1.sign.crt"
+
+client4:
+  # 组织ID
+  org_id: "wx-org4.chainmaker.org"
+  # 客户端用户私钥路径
+  user_key_file_path: "crypto-config/wx-org4.chainmaker.org/user/client1/client1.tls.key"
+  # 客户端用户证书路径
+  user_crt_file_path: "crypto-config/wx-org4.chainmaker.org/user/client1/client1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "crypto-config/wx-org4.chainmaker.org/user/client1/client1.sign.key"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "crypto-config/wx-org4.chainmaker.org/user/client1/client1.sign.crt"
+
+#pwk_client1:
+#  # 组织ID
+#  org_id: "wx-org1.chainmaker.org"
+#  user_sign_key_file_path: "./crypto-config/wx-org1.chainmaker.org/admin/admin.key"
+#  crypto:
+#    hash: SHA256
+#  auth_type: permissionedWithKey
+#
+#
+#pwk_client2:
+#  # 组织ID
+#  org_id: "wx-org2.chainmaker.org"
+#  user_sign_key_file_path: "./crypto-config/wx-org2.chainmaker.org/admin/admin.key"
+#  crypto:
+#    hash: SHA256
+#  auth_type: permissionedWithKey
+#
+#
+#pwk_client3:
+#  # 组织ID
+#  org_id: "wx-org3.chainmaker.org"
+#  user_sign_key_file_path: "./crypto-config/wx-org3.chainmaker.org/admin/admin.key"
+#  crypto:
+#    hash: SHA256
+#  auth_type: permissionedWithKey
+#
+#pwk_client4:
+#  # 组织ID
+#  org_id: "wx-org4.chainmaker.org"
+#  user_sign_key_file_path: "./crypto-config/wx-org4.chainmaker.org/admin/admin.key"
+#  crypto:
+#    hash: SHA256
+#  auth_type: permissionedWithKey
+

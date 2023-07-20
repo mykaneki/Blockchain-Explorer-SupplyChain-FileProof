@@ -1,0 +1,11 @@
+protobuf
+grpcio
+pyyaml
+cryptography
+pymysql
+pysha3
+eth-abi
+asn1
+pytest
+pytest-timeout
+allure-pytest

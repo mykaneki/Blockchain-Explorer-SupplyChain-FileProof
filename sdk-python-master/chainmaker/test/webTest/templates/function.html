@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件搜索</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        #search-container {
+            position: relative;
+            text-align: center;
+        }
+        #search-label {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+        }
+        #search-input {
+            width: 400px;
+            height: 40px;
+            font-size: 16px;
+        }
+        #search-button {
+            height: 40px;
+            font-size: 16px;
+        }
+        #search-results {
+            text-align: center;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#search-form').submit(function(e) {
+                e.preventDefault();
+                var hash = $('#search-input').val();
+                searchFileByHash(hash);
+            });
+        });
+
+        function searchFileByHash(hash) {
+            $.get('http://119.91.212.68:5000/findFileNameByHash', { hash: hash }, function(data) {
+                var result = JSON.parse(data);
+                var file_name = result.file_name;
+                var time = result.time;
+                var file_hash = result.file_hash;
+                var gas_used = result.gas_used;
+
+                var resultHtml = '<ul>';
+                resultHtml += '<li>文件名：' + file_name + '</li>';
+                resultHtml += '<li>时间：' + time + '</li>';
+                resultHtml += '<li>哈希值：' + file_hash + '</li>';
+                resultHtml += '<li>Gas消耗：' + gas_used + '</li>';
+                resultHtml += '</ul>';
+
+                $('#search-results').html(resultHtml);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="search-container">
+	    <label for="search-input" id="search-label"><h1>文件搜索</h1></label><br>
+        <form id="search-form">
+            <input type="text" id="search-input" name="hash" placeholder="请输入哈希值" required><br>
+            <button type="submit" id="search-button">搜索</button>
+        </form>
+    </div>
+    <div id="search-results"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('安装依赖'){
+            steps {
+                sh '''
+                yum install python3-devel -y
+                python3 -m pip -q install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple
+                python3 -m virtualenv venv
+                . venv/bin/activate
+                pip install -q -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+                '''
+            }
+        }
+        stage('冒烟测试') {
+            steps {
+                sh '''
+                . venv/bin/activate
+                python -m pytest tests -m smoke
+                '''
+            }
+        }
+    }
+
+}
